@@ -9,5 +9,6 @@ vagrant ssh
 
 ## How to run
 ```bash
-python dog_giffter.py -g <GIPHY API KEY>
+# first add keys/credentials to credentials.yml
+python dog_giffter.py
 ```
