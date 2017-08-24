@@ -5,7 +5,7 @@ import json
 import sys
 import argparse
 
-parser = argparse.ArgumentParser(prog='Dog Giffer', description="A Reddit bot that shares cute dog gifs with Redditors that need it most.")
+parser = argparse.ArgumentParser(prog='Dog Giffter', description="A Reddit bot that shares cute dog gifs with Redditors that need it most.")
 parser.add_argument('-g', '--giphy', metavar="KEY", type=str, required=True, help="the GIPHY API key")
 args = parser.parse_args()
 
