@@ -36,9 +36,9 @@ def get_pictures():
 
 def analyze_comment(comment):
     """
-    Performs sentiment analyzes on the given comment
+    Performs sentiment analysis on the given comment to determine if the bot should reply.
     """
-    scores = ANALYZER.polarity_scores(comment.body) 
+    scores = ANALYZER.polarity_scores(comment.body)
 
     if ( scores['compound'] < COMPOUND_THRESHOLD and scores['neg'] > NEGATIVE_THRESHOLD):
         print(comment.body)
@@ -49,7 +49,7 @@ def analyze_comment(comment):
 
 def reply_to(comment):
     """
-    Writes a reply to the given comment. This reply contains a cute dog gif.
+    Writes a reply to the given comment. The reply contains a cute dog gif.
     """
 
     if not dog_pictures:
